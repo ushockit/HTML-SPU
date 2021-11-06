@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: antiquewhite;
+    height: 80vh;
+    background-image: url('../images/header-bckg.jpeg');
+    background-size: cover;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #fff;
+}
+
+.logo {
+    max-width: 80px;
+}
+
+.menu {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.header-content-title {
+    margin: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.header-content-subtitle {
+    text-transform: lowercase;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    min-width: 120px;
+    min-height: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 10px;
+}
+
+
+.social {
+    margin: 5px;
+}
+
+.btn-info {
+    background-color: rgb(49, 131, 86);
+}
+
+section {
+    min-height: 500px;
+    background-color: azure;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.section-1 {
+    background-image: url('../images/323-3238176_iphone-6-hand-png-download-phone-call-with.png');
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 800px bottom;
+}

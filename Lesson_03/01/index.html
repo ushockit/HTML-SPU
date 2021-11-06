@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 03</title>
+
+    <style>
+        .ex1 {
+            display: flex;
+            /*flex-direction: row;*/
+            /*flex-wrap: wrap; */
+            flex-flow: row wrap;
+            background-color: rgb(89, 89, 89);
+            justify-content: space-around;
+            height: 800px;
+            align-items: center;
+            align-content: space-around;
+        }
+        .ex1-child {
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            border: 1px solid rgba(0,0,0,.6);
+            box-sizing: border-box;
+            font-size: 2rem;
+            text-align: center;
+            line-height: 200px;
+            background-color: rgb(201, 201, 201);
+        }
+        .ex1-child-1 {
+            /* order: 4;
+            flex-grow: 2; */
+            align-self: flex-start;
+        }
+        .ex1-child-2 {
+            order: 2;
+        }
+        .ex1-child-3 {
+            order: 3;
+        }
+        .ex1-child-4 {
+            order: 1;
+        }
+        .ex1-child-5 {
+            order: 5;
+        }
+        .ex1-child-6 {
+            order: 6;
+        }
+        .ex1-child-7 {
+            order: 7;
+        }
+        .ex1-child-8 {
+            order: 8;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        header
+        main
+        footer
+        nav
+        article
+        section
+        aside
+        address
+     -->
+
+     <!-- FlexBox -->
+     <div class="ex1">
+         <div class="ex1-child ex1-child-1">1</div>
+         <div class="ex1-child ex1-child-2">2</div>
+         <div class="ex1-child ex1-child-3">3</div>
+         <div class="ex1-child ex1-child-4">4</div>
+         <!-- <div class="ex1-child ex1-child-5">5</div>
+         <div class="ex1-child ex1-child-6">6</div>
+         <div class="ex1-child ex1-child-7">7</div>
+         <div class="ex1-child ex1-child-8">8</div> -->
+     </div>
+</body>
+</html>
