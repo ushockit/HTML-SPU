@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .form-item {
+            margin: 5px 0;
+        }
+        .form-item > label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .form-item > input {
+            display: block;
+            width: 100%;
+            min-height: 25px;
+        }
+        .btn {
+            min-height: 25px;
+            min-width: 80px;
+        }
+
+        .form {
+            padding: 10px;
+            width: 300px;
+        }
+
+        .title {
+            color: gray;
+            transition: color ease 0.2s;
+        }
+
+        .title:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="title">Hello world</h2>
+
+    <form>
+        <div>
+            <input type="week">
+            <input type="text" value="Hello" placeholder="Enter your text..">
+            <input type="number" min="0" max="100">
+
+            <label for="checkbox">Checkbox</label>
+            <input type="checkbox" id="checkbox">
+
+
+            <div>
+                <label>
+                    Variant 1
+                    <input type="radio" name="variants">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Variant 2
+                    <input type="radio" name="variants">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Variant 3
+                    <input type="radio" name="variants">
+                </label>
+            </div>
+        </div>
+    </form>
+
+
+    <form class="form">
+        <div class="form-item">
+            <label for="login-input">Login</label>
+            <input type="text" id="login-input">
+        </div>
+        <div class="form-item">
+            <label for="password-input">Password</label>
+            <input type="text" id="password-input">
+        </div>
+        <div class="form-item">
+            <label for="confirm-password">Confirm password</label>
+            <input type="text" id="confirm-password">
+        </div>
+        <div>
+            <select multiple>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+                <option>Value 4</option>
+            </select>
+        </div>
+        <textarea cols="30" rows="10"></textarea>
+        <button class="btn">Submit</button>
+    </form>
+</body>
+</html>

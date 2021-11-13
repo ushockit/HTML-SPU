@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 04</title>
+    <style>
+        /* Выборка всех элементов */
+        * {
+
+        }
+        .blocks * {
+
+        }
+
+        div * {}
+
+
+        .menu li {
+
+        }
+
+        ul.menu > li {
+
+        }
+
+        /* a:link {
+            color: yellow;
+        }
+
+        a:visited {
+            color: red;
+        } */
+
+        ul + div {
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+        }
+
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #000;
+        }
+        a:after {
+            content: " /";
+        }
+        a:first-child:before {
+            content: " » ";
+        }
+        a:last-child:after {
+            content: "";
+        }
+
+
+        .popup {
+            float: left;
+            width: 340px;
+            background: #727272;
+            padding: 10px;
+            border-radius: 6px;
+            color: #FFF;
+            position: relative;
+            font-size: 12px;
+            line-height: 20px;
+            margin-left: 12px;
+            box-sizing: border-box;
+        }
+
+        .popup:before {
+            content: "";
+            display: block;
+            width: 0; 
+            height: 0; 
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-right: 12px solid #727272; 
+            position: absolute;
+            top: 16px;
+            left: -12px;
+        }
+
+        .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background-color: aquamarine;
+        }
+
+        .circle:hover {
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,.7);
+        }
+
+
+        .popup::first-letter {
+            font-size: 22px;
+            color: red;
+            font-weight: bold;
+        }
+
+        ul.menu > li:last-child {
+            text-decoration: underline;
+            border: 2px solid gray;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- CSS селекторы - https://code.tutsplus.com/ru/tutorials/the-30-css-selectors-you-must-memorize--net-16048-->
+    <ul class="menu">
+        <li></li>
+        <li>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <div></div>
+    <div></div>
+
+    <a href="https://google.com">Google</a>
+    <a href="https://demo.com">Demo</a>
+
+
+    <p>
+        <a href="#">Home</a>
+        <a href="#">Team</a>
+        <a href="#">Developers</a>
+    </p>
+
+    <div class="circle"></div>
+    <div class="demo">First</div>
+    <div class="demo">Second</div>
+
+
+    <div class="popup">
+        Cascading Style Sheets is a style sheet language used for describing
+        the presentation semantics of a document written in a markup language.
+    </div>
+
+    <div class="popup">
+        Cascading Style Sheets is a style sheet language used for describing
+        the presentation semantics of a document written in a markup language.
+    </div>
+</body>
+</html>
