@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <style>
+        * {
+            /* Создание переменной */
+            --text-color: #737272;
+            --font-family: Arial, Helvetica, sans-serif;
+            --block-border-color: #e6e6e6;
+        }
+        .text {
+            /* Использование переменной */
+            color: var(--text-color);
+            font-family: var(--font-family);
+        }
+        .blocks {
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+        }
+        .block {
+            width: 250px;
+            height: 300px;
+            box-sizing: border-box;
+            border: 1px solid var(--block-border-color);
+            border-radius: 5px;
+            margin: 10px;
+            /* flex-grow: 1; */
+        }
+        @media screen and (min-width: 1440px){
+            .blocks {
+                justify-content: space-evenly;
+            }
+            .block {
+                width: 320px;
+            }
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1440px){
+            .blocks {
+                justify-content: space-evenly;
+            }
+            .block {
+                width: 450px;
+                /* flex-grow: 1; */
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1024px){
+            .block {
+                width: 400px;
+                flex-grow: 1;
+            }
+        }
+        @media screen and (min-width: 360px) and (max-width: 768px){
+            .block {
+                flex-grow: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus nesciunt ab exercitationem animi omnis inventore voluptatem earum et commodi optio voluptatum atque dolorem asperiores fugiat blanditiis, corporis fugit impedit architecto.</div>
+    <div class="blocks">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+    </div>
+    <a href="index2.html">Index 2</a>
+</body>
+</html>
